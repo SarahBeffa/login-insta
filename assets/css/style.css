@@ -1,0 +1,247 @@
+:root{
+    --ligth-silver:#ccc;
+    --blue:#0088ff;
+    --dimgray: #696969;
+    --white: #fff;
+    --suva-gray:#8e8e8e;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#main-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#banner-container,
+#form-container {
+  flex: 1 1 0;
+  width: 50%;
+}
+
+.main-content{
+    display:flex;
+}
+
+.banner img{
+   width: 370px;
+   margin: 2rem 2rem; 
+}
+
+.form-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--ligth-silver);
+}
+
+.form-content img{
+    width: 180px;
+    margin: 50px;
+}
+
+.other-links img{
+    width: 6%;
+}
+
+#form-container{
+    margin: 5rem 0;
+    width: 100%
+}
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.login input{
+    width: 100%;
+    padding: 1rem;
+}
+
+#submit{
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    border-radius: 5px; 
+    margin-top: 1rem;
+}
+
+#submit:hover{
+    background-color:#4169E1;
+}
+
+.separator{
+    position: relative;
+}
+
+.line{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;  
+    margin: 25px auto 35px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--dimgray);
+    background-color: var(--white);
+    top: -6px;
+    width: 50px;
+    margin-left: 110px;
+    font-size: 12px;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+}
+  
+#facebook-login img{
+    width: 16px;
+    height:16px;
+    margin-right: 8px;
+    margin: 0 8px;
+}
+
+.forgot-pass{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.forgot-pass a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--dimgray);
+}
+
+.register{
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid var(--ligth-silver);    
+}
+
+.register-content{
+    margin: 2rem;
+    font-size: 1.4rem;
+}
+
+.register-content a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.download{
+    display:flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.apple-store img,
+.google-store img{
+    width: 13rem;
+}
+
+.get-app p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1.2rem
+}
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-links{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links li{
+    list-style-type: none;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: var(--suva-gray);
+    font-size: 1.2rem;
+}
+
+#copyright{
+    text-align: center;
+    margin: 2rem;
+    color: var(--suva-gray);
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner img{
+        display: none;
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 726px){
+    .banner img{
+        display: none;
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner img{
+        display: none;
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .login-content{
+        gap:1rem;
+    }
+    .apple-store img,
+    .google-store img{
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .login input {
+        width: 95%;
+}
+
+    .login-content{ 
+        gap:1rem;
+}
+}
